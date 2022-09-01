@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="480" Width="815" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="52*"/>
@@ -18,8 +18,21 @@
         <Label Content="Benutzer Anlage&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="98"/>
         <Button Content="Akzeptieren" HorizontalAlignment="Left" Margin="723,0,0,0" Grid.Row="2" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="654,0,0,0" Grid.Row="2" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,150,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="59,181,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox Content="Buchhaltung" HorizontalAlignment="Left" Margin="37,127,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="Geschäftsführung" HorizontalAlignment="Left" Margin="128,127,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked_1"/>
+        <Label Content="Benutzer:" HorizontalAlignment="Left" Margin="25,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="72"/>
+        <TextBox Name="Benutzer" HorizontalAlignment="Left" Margin="95,23,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding MyValue}" VerticalAlignment="Top" Width="127" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="25,46,0,0" Grid.Row="1" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" Margin="95,50,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" TextChanged="TextBox_TextChanged"/>
+        <Label Content="E-Mail Adresse:" HorizontalAlignment="Left" Margin="10,73,0,0" Grid.Row="1" VerticalAlignment="Top" Width="87"/>
+        <TextBox x:Name="Mail" HorizontalAlignment="Left" Margin="95,77,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Durchwahl:" HorizontalAlignment="Left" Margin="25,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="Durchwahl" HorizontalAlignment="Left" Margin="95,100,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" TextChanged="TextBox_TextChanged"/>
+        <CheckBox Content="Produktion" HorizontalAlignment="Left" Margin="37,146,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="Development" HorizontalAlignment="Left" Margin="121,146,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="HomeOffice fähig" Margin="37,185,633,118" Grid.Row="1" Checked="CheckBox_Checked_2"/>
+        <CheckBox Content="Zufällig" HorizontalAlignment="Left" Margin="239,52,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="CheckBox_Checked_3"/>
+
 
     </Grid>
 </Window>

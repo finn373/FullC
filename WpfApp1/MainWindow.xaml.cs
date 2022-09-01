@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.DirectoryServices;
 
 namespace WpfApp1
 {
@@ -20,13 +21,20 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+       
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string benutzername = Benutzer.Text;
+            string passwort = Password.Text;
+            string vmail = Mail.Text;
+            string vdurchwahl = Durchwahl.Text;
+            MessageBox.Show(benutzername, passwort, vmail);
 
         }
 
@@ -36,6 +44,26 @@ namespace WpfApp1
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void CheckBox_Checked_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBox_Checked_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckBox_Checked_3(object sender, RoutedEventArgs e)
         {
 
         }
